@@ -1,0 +1,73 @@
+.menu {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border-radius: 10px;
+  width: 370px;
+  height: 130px;
+  padding: 15px;
+  margin: 0;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.menu:hover {
+  box-shadow: 0 10px 10px #ddd;
+}
+
+.menu h1 {
+  font-size: 14px;
+}
+
+.menu h3 {
+  font-weight: 400;
+  margin: 0 0 0.5rem;
+}
+
+.menu p {
+  font-size: 0.9rem;
+  color: #808484;
+  line-height: 1.3rem;
+  height: 2.6rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0 0 1rem;
+}
+
+.menu-info {
+  display: flex;
+  flex-direction: column;
+  width: 700px; /* je comprends pas pourquoi il faut mettre autant ! */
+}
+
+.menu-img {
+  align-self: flex-end;
+  height: 100%;
+  width: 100%;
+  margin-left: 15px;
+}
+
+.menu-img img {
+  width: 130px;
+  height: 130px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.menu-price {
+  color: #808484;
+  font-size: 1.1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.menu-popular {
+  color: #ff8000;
+  font-size: 0.8rem;
+  margin-left: 1rem;
+  font-weight: 800;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

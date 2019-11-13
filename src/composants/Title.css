@@ -1,0 +1,23 @@
+.title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  border-bottom: 1px solid #eee;
+  background-color: #fff;
+}
+
+.title-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  /* height: 41px; */
+  max-width: 1200px;
+  width: 96vw;
+}
+
+.title-logo img {
+  height: 41px;
+}

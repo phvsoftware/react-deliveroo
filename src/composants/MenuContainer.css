@@ -1,0 +1,16 @@
+.menu-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  background-color: #f3f5f5;
+  color: #2e3333;
+  margin: 0 auto;
+  width: 100vw;
+  max-width: 1200px;
+}
+
+.menu-container2 {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1;
+}
