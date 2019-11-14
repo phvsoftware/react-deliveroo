@@ -37,7 +37,12 @@ function App() {
 
   const addToCart = menu => {
     const tempCart = [...cart];
-    const newCart = { id: menu.id, name: menu.title, price: menu.price, quantity: 1 };
+    const newCart = {
+      id: menu.id,
+      name: menu.title,
+      price: menu.price,
+      quantity: 1
+    };
     // vérifie qu'on ne l'a pas déjà, si oui on augmente sa quantité
     if (tempCart.find(item => item.id === newCart.id)) {
       changeQuantity(newCart, 1);
@@ -66,7 +71,10 @@ function App() {
   };
 
   const calculate = () => {
-    const sub = cart.reduce((sum, item) => sum + +item.price * item.quantity, 0);
+    const sub = cart.reduce(
+      (sum, item) => sum + +item.price * item.quantity,
+      0
+    );
     setSubTotal(formatNumber(sub));
     setTotal(formatNumber(sub + +charges));
   };
@@ -76,6 +84,8 @@ function App() {
     setTotal(0);
     setCart([]);
   };
+
+  document.title = "PhV Deliveroo";
 
   return (
     <div>

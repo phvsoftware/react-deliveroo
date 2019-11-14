@@ -25,7 +25,14 @@ const Menu = ({ menu, onClick }) => {
       </div>
       {menu.picture && (
         <div className="menu-img">
-          <img src={menu.picture} alt="" />
+          <img
+            src={menu.picture}
+            alt=""
+            onError={e => {
+              //               // e.target.src = ReplacementImage;
+              e.target.style = "display: none;"; //pb sur l'image de  Bircher Muesli
+            }}
+          />
         </div>
       )}
     </div>
